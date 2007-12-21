@@ -15,6 +15,7 @@ Source:         http://www.cpan.org/modules/by-module/Statistics/%{module}-%{ver
 Buildrequires:  perl-devel
 %endif
 Buildarch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 This module provides basic functions used in descriptive statistics. It has an
