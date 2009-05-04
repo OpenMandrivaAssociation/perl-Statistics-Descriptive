@@ -1,7 +1,7 @@
 %define module  Statistics-Descriptive
 %define name    perl-%{module}
-%define version 2.6
-%define release %mkrel 10
+%define version 2.7
+%define release %mkrel 1
 
 Name:           %{name}
 Version:        %{version}
