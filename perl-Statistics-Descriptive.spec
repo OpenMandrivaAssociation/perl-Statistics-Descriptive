@@ -1,5 +1,5 @@
 %define upstream_name    Statistics-Descriptive
-%define upstream_version 3.0200
+%define upstream_version 3.0201
 
 Name:           perl-%{upstream_name}
 Version:        %perl_convert_version %{upstream_version}
