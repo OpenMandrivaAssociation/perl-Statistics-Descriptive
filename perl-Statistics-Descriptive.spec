@@ -1,5 +1,5 @@
 %define modname	Statistics-Descriptive
-%define modver 3.0605
+%define modver 3.0607
 
 Summary:	Module of basic descriptive statistical functions
 Name:		perl-%{modname}
@@ -36,5 +36,6 @@ method, the entire data set is retained and additional functions are available.
 %doc README Changes
 %{perl_vendorlib}/Statistics
 %{_mandir}/man3/*
+
 
 
