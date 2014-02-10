@@ -11,6 +11,7 @@ Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Statistics/Statistics-Descriptive-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
+BuildRequires: perl(List::MoreUtils)
 
 %description
 This module provides basic functions used in descriptive statistics. It has an
