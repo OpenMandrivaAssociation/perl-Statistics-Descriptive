@@ -1,18 +1,17 @@
 %define modname	Statistics-Descriptive
-%define modver 3.0607
 
 Summary:	Module of basic descriptive statistical functions
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
+Version:	3.0800
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Statistics/Statistics-Descriptive-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Statistics/Statistics-Descriptive-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
-BuildRequires: perl(List::MoreUtils)
+BuildRequires:	perl(List::MoreUtils)
 
 %description
 This module provides basic functions used in descriptive statistics. It has an
@@ -22,17 +21,17 @@ is stored and only a few statistical measures are available. Using the full
 method, the entire data set is retained and additional functions are available.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{version}
+perl Makefile.PL INSTALLDIRS=vendor
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %check
 %make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files 
 %doc README Changes
