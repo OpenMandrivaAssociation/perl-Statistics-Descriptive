@@ -2,8 +2,8 @@
 
 Summary:	Module of basic descriptive statistical functions
 Name:		perl-%{modname}
-Version:	3.0800
-Release:	2
+Version:	3.0801
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
